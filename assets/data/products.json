@@ -1,0 +1,37 @@
+[
+  {
+    "name": "LVL 1 Burger",
+    "image": "assets/images/burger1.png",
+    "price": 79,
+    "description": "Hamburguesa sencilla con queso.",
+    "category": "burgers"
+  },
+  {
+    "name": "LVL 2 Burger",
+    "image": "assets/images/burger1.png",
+    "price": 109,
+    "description": "Doble carne, doble queso.",
+    "category": "burgers"
+  },
+  {
+    "name": "Papas clásicas",
+    "image": "assets/images/fries.png",
+    "price": 29,
+    "description": "Papas doraditas y crujientes.",
+    "category": "fries"
+  },
+  {
+    "name": "Malteada de fresa",
+    "image": "assets/images/drink.png",
+    "price": 45,
+    "description": "Deliciosa malteada natural.",
+    "category": "drinks"
+  },
+  {
+    "name": "Cheesecake",
+    "image": "assets/images/dessert.png",
+    "price": 59,
+    "description": "Postre para cerrar KO.",
+    "category": "desserts"
+  }
+]

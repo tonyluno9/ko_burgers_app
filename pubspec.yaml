@@ -1,0 +1,16 @@
+
+name: ko_burgers_app
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.0
+  go_router: ^13.0.0
+  google_fonts: ^6.3.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/images/
