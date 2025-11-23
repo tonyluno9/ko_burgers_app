@@ -129,6 +129,21 @@ class HomeScreen extends ConsumerWidget {
                                       desc: "3 LVL 3 para la banda",
                                       price: 399,
                                     ),
+                                    _offerCard(
+                                      title: "Combo KO Rookie", 
+                                      desc: "LVL 1 + papas + bebida", 
+                                      price: 119,
+                                    ),
+                                     _offerCard(
+                                      title: "Combo Guerrero", 
+                                      desc: "LVL 2 + papas grandes", 
+                                      price: 159,
+                                    ),
+                                     _offerCard(
+                                      title: "Combo Campeón KO", 
+                                      desc: "LVL 3 + papas + postre", 
+                                      price: 199,
+                                    ),
                                   ],
                                 ),
                               ),

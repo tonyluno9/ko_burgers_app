@@ -5,19 +5,19 @@ import '../models/product_model.dart';
 class ProductCard extends StatelessWidget {
   final Product product;
   final VoidCallback onAdd;
+  final VoidCallback onTap;
 
   const ProductCard({
     super.key,
     required this.product,
     required this.onAdd,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        context.push('/product', extra: product);
-      },
+      onTap: onTap, // ahora usa el callback recibido
       child: Card(
         margin: const EdgeInsets.symmetric(vertical: 10),
         child: Padding(
@@ -41,22 +41,27 @@ class ProductCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(product.name,
-                        style: const TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w600)),
+                    Text(
+                      product.name,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                     const SizedBox(height: 4),
                     Text(
                       product.description,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style:
-                          const TextStyle(fontSize: 12, color: Colors.grey),
+                      style: const TextStyle(fontSize: 12, color: Colors.grey),
                     ),
                     const SizedBox(height: 6),
                     Text(
                       "\$${product.price.toStringAsFixed(2)}",
                       style: const TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 14),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
                     ),
                   ],
                 ),

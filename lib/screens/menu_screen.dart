@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:ko_burgers_app/screens/product_detail_screen_offers.dart';
 import '../providers/products_provider.dart';
 import '../providers/cart_provider.dart';
 import '../widgets/product_card.dart';
 import '../widgets/bottom_nav.dart';
+
+// 👇 Agregado SOLO esto
+import '../screens/product_detail_screen_burguers.dart';
 
 class MenuScreen extends ConsumerStatefulWidget {
   const MenuScreen({super.key});
@@ -66,13 +70,38 @@ class _MenuScreenState extends ConsumerState<MenuScreen> {
                     itemCount: filtered.length,
                     itemBuilder: (_, i) {
                       final product = filtered[i];
+
                       return ProductCard(
                         product: product,
+
+
+                        onTap: () {
+                          if (_category == "burgers") {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) =>
+                                    ProductDetailScreenBurguers(product: product),
+                              ),
+                            );
+                          }
+                          if (_category == 'offer') {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) =>
+                                    ProductDetailScreenOffers(product: product),
+                              ),
+                            );
+                          }
+                        },
+
                         onAdd: () {
                           ref.read(cartProvider.notifier).addProduct(product);
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: Text("${product.name} agregado al carrito"),
+                              content:
+                                  Text("${product.name} agregado al carrito"),
                               duration: const Duration(seconds: 1),
                             ),
                           );
@@ -101,6 +130,7 @@ class _MenuScreenState extends ConsumerState<MenuScreen> {
           _catChip("🍟 Papas", "fries"),
           _catChip("🍰 Postres", "desserts"),
           _catChip("🥤 Bebidas", "drinks"),
+          _catChip("🕑 Ofertas", "offer")
         ],
       ),
     );

@@ -14,24 +14,115 @@
     "category": "burgers"
   },
   {
-    "name": "Papas clásicas",
+    "name": "LVL 3 Burguer",
+    "image": "assets/images/burger1.png",
+    "price": 129,
+    "description": "Triple carne, triple de sabor",
+    "category": "burgers"
+  },
+  {
+    "name": "Papas Chicas",
     "image": "assets/images/fries.png",
     "price": 29,
     "description": "Papas doraditas y crujientes.",
     "category": "fries"
   },
+   {
+    "name": "Papas Grandes",
+    "image": "assets/images/fries.png",
+    "price": 39,
+    "description": "Papas doraditas y crujientes.",
+    "category": "fries"
+  },
   {
-    "name": "Malteada de fresa",
+    "name": "Malteada de Fresa",
     "image": "assets/images/drink.png",
     "price": 45,
-    "description": "Deliciosa malteada natural.",
+    "description": "Deliciosa malteada de fresa.",
+    "category": "drinks"
+  },
+  {
+    "name": "Malteada de Vainilla",
+    "image": "assets/images/drink.png",
+    "price": 45,
+    "description": "Deliciosa malteada de vainilla.",
+    "category": "drinks"
+  },
+  {
+    "name": "Malteada de Horchata",
+    "image": "assets/images/drink.png",
+    "price": 45,
+    "description": "Deliciosa malteada sabor horchata de coco.",
+    "category": "drinks"
+  },
+  {
+    "name": "Coca-Cola 600ml",
+    "image": "assets/images/drink.png",
+    "price": 20,
+    "description": "Refreco gasificado",
+    "category": "drinks"
+  },
+  {
+    "name": "Coca-Cola 1L",
+    "image": "assets/images/drink.png",
+    "price": 30,
+    "description": "Refreco gasificado",
+    "category": "drinks"
+  },
+  {
+    "name": "Té negro",
+    "image": "assets/images/drink.png",
+    "price": 15,
+    "description": "Té negro natural de la casa KO",
     "category": "drinks"
   },
   {
     "name": "Cheesecake",
     "image": "assets/images/dessert.png",
     "price": 59,
-    "description": "Postre para cerrar KO.",
+    "description": "Postre para acabar KO.",
     "category": "desserts"
+  },
+  {
+    "name": "Promo del dia",
+    "image": "assets/images/burger1.png",
+    "price": 119,
+    "description": "LVL 1 + papas chicas + bebida de 600ml.",
+    "category": "offer"
+  },
+  {
+    "name": "Combo KO",
+    "image": "assets/images/burger1.png",
+    "price": 149,
+    "description": "LVL 2 + papas chicas + bebida de 600ml.",
+    "category": "offer"
+  },
+  {
+    "name": "Doble LVL 1",
+    "image": "assets/images/burger1.png",
+    "price": 159,
+    "description": "Dos burguers LVL 1 + bebida de 600ml para duos.",
+    "category": "offer"
+  },
+  {
+    "name": "Noche KO",
+    "image": "assets/images/burger1.png",
+    "price": 399,
+    "description": "3 burguers LVL 3 + bebida de 1L para compartil con amigos",
+    "category": "offer"
+  },
+  {
+    "name": "Combo Guerrero",
+    "image": "assets/images/burger1.png",
+    "price": 159,
+    "description": "LVL 2 + papas grandes + bebida de 600ml.",
+    "category": "offer"
+  },
+  {
+    "name": "Combo Campeón KO",
+    "image": "assets/images/burger1.png",
+    "price": 199,
+    "description": "LVL 3 + papas chicas + postre + bebida de 600ml.",
+    "category": "offer"
   }
 ]

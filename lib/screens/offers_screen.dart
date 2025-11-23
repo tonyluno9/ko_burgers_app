@@ -24,6 +24,30 @@ class OffersScreen extends StatelessWidget {
         "price": 199,
         "tag": "Modo brutal"
       },
+      {
+        "title": "Promo del dia",
+        "desc": "LVL 1 + papas + bebida.",
+        "price": 119,
+        "tag": "Aprovechala"
+      },
+      {
+        "title": "Combo KO",
+        "desc": "LVL 2 + papas + bebida.",
+        "price": 149,
+        "tag": "Nivel 2 de poder"
+      },
+      {
+        "title": "Doble LVL 1",
+        "desc": "Dos burguers LVL 1 para duos.",
+        "price": 159,
+        "tag": "Para parejas con buenos gustos"
+      },
+      {
+        "title": "Noche KO",
+        "desc": "3 burguers LVL 3.",
+        "price": 399,
+        "tag": "Para compartir con amigos"
+      },
     ];
 
     return Scaffold(
@@ -40,8 +64,8 @@ class OffersScreen extends StatelessWidget {
               subtitle: Text("${o["desc"]} · ${o["tag"]}"),
               trailing: Text(
                 "\$${o["price"]}",
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 16),
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
               ),
             ),
           );

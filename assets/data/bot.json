@@ -4,6 +4,10 @@
     "answer": "Hoy tenemos 2x1 en LVL 1 a partir de las 5 pm."
   },
   {
+    "question": "promocion",
+    "answer": "Hoy tenemos 2x1 en LVL 1 a partir de las 5 pm."
+  },
+  {
     "question": "nuevo",
     "answer": "Si eres nuevo, te recomiendo la LVL 1 con papas clásicas."
   },
@@ -14,5 +18,33 @@
   {
     "question": "niveles",
     "answer": "LVL 1 es ligera, LVL 2 es potente, LVL 3 es brutal KO."
+  },
+  {
+    "question": "precios",
+    "answer": "Nuestras hamburguesas van desde los $79, $109 hasta $129 pesos dependiendo del nivel, pruebe preguntar por nuetros niveles"
+  },
+  {
+    "question": "precio",
+    "answer": "Nuestras hamburguesas van desde los $79, $109 hasta $129 pesos dependiendo del nivel, pruebe preguntar por nuetros niveles"
+  },
+  {
+    "question": "domicilio",
+    "answer": "Si claro, contamos con servicio a domicilio a todo Campeche con un costo de $35"
+  },
+  {
+    "question": "envio",
+    "answer": "Si claro, contamos con servicio a domicilio a todo Campeche con un costo de $35"
+  },
+  {
+    "question": "pago",
+    "answer": "Contamos con tres formas de pagar: efectivo, transferencia y pago con tarjeta."
+  },
+  {
+    "question": "oferta",
+    "answer": "Te recomendamos dentro de nuestro menú, ir al apartado de ofertas y podrás hacer valida la oferta"
+  },
+  {
+    "question": "error",
+    "answer": "Lo sentimos mucho, porfavor envia un correo con la explicación de tu caso a: KO_Burguers@gmail.com"
   }
 ]

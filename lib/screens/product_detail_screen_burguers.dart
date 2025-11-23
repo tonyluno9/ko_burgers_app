@@ -3,13 +3,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/product_model.dart';
 import '../providers/cart_provider.dart';
 
-class ProductDetailScreen extends ConsumerWidget {
+class ProductDetailScreenBurguers extends ConsumerWidget {
   final Product product;
 
-  const ProductDetailScreen({super.key, required this.product});
+  const ProductDetailScreenBurguers({super.key, required this.product});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    
+    final burgerType = ValueNotifier<String>("Clásica");
+
     return Scaffold(
       appBar: AppBar(title: Text(product.name)),
       body: Column(
@@ -43,7 +46,36 @@ class ProductDetailScreen extends ConsumerWidget {
                   style: const TextStyle(
                       fontSize: 24, fontWeight: FontWeight.bold),
                 ),
+
                 const SizedBox(height: 24),
+
+                // selector
+                ValueListenableBuilder(
+                  valueListenable: burgerType,
+                  builder: (_, value, __) {
+                    return DropdownButtonFormField<String>(
+                      value: value,
+                      decoration: const InputDecoration(
+                        labelText: "Tipo de Burger",
+                        border: OutlineInputBorder(),
+                      ),
+                      items: const [
+                        DropdownMenuItem(
+                            value: "Clásica", child: Text("Clásica con queso")),
+                        DropdownMenuItem(
+                            value: "Bufalo", child: Text("Bufalo")),
+                        DropdownMenuItem(
+                            value: "BBQ", child: Text("BBQ")),
+                            DropdownMenuItem(
+                            value: "Chesse", child: Text("Chesse")),
+                      ],
+                      onChanged: (v) => burgerType.value = v!,
+                    );
+                  },
+                ),
+
+                const SizedBox(height: 24),
+
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
@@ -51,10 +83,11 @@ class ProductDetailScreen extends ConsumerWidget {
                       ref
                           .read(cartProvider.notifier)
                           .addProduct(product);
+
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(
-                              "${product.name} agregado al carrito"),
+                              "${product.name} (${burgerType.value}) agregado al carrito"),
                           duration: const Duration(seconds: 1),
                         ),
                       );
