@@ -1,5 +1,8 @@
 # ko_burgers_app
 
+- Mauricio Alberto Sonda Cahuich
+- Anngel Antonio Perez Reyes
+
 A new Flutter project.
 
 ## Getting Started
