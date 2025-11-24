@@ -44,7 +44,19 @@
     "answer": "Te recomendamos dentro de nuestro menú, ir al apartado de ofertas y podrás hacer valida la oferta"
   },
   {
+    "question": "ofertas",
+    "answer": "Te recomendamos dentro de nuestro menú, ir al apartado de ofertas y podrás hacer valida la oferta"
+  },
+  {
     "question": "error",
     "answer": "Lo sentimos mucho, porfavor envia un correo con la explicación de tu caso a: KO_Burguers@gmail.com"
+  },
+  {
+    "question": "horario",
+    "answer": "Solamente laboramos de Viernes a Domingo de 5pm a 12am"
+  },
+  {
+    "question": "trabajan",
+    "answer": "Solamente laboramos de Viernes a Domingo de 5pm a 12am"
   }
 ]

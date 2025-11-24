@@ -120,21 +120,28 @@ class _MenuScreenState extends ConsumerState<MenuScreen> {
     );
   }
 
-  Widget _buildCategorySelector() {
+    Widget _buildCategorySelector() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          _catChip("🍔 Burgers", "burgers"),
-          _catChip("🍟 Papas", "fries"),
-          _catChip("🍰 Postres", "desserts"),
-          _catChip("🥤 Bebidas", "drinks"),
-          _catChip("🕑 Ofertas", "offer")
-        ],
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            _catChip("🍔 Burgers", "burgers"),
+            const SizedBox(width: 8),
+            _catChip("🍟 Papas", "fries"),
+            const SizedBox(width: 8),
+            _catChip("🍰 Postres", "desserts"),
+            const SizedBox(width: 8),
+            _catChip("🥤 Bebidas", "drinks"),
+            const SizedBox(width: 8),
+            _catChip("🕑 Ofertas", "offer"),
+          ],
+        ),
       ),
     );
   }
+
 
   Widget _catChip(String label, String value) {
     final selected = _category == value;

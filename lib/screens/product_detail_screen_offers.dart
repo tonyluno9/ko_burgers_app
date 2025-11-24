@@ -64,7 +64,8 @@ class ProductDetailScreenOffers extends ConsumerWidget {
                             value: "Clásica", child: Text("Clásica con queso")),
                         DropdownMenuItem(
                             value: "Bufalo", child: Text("Bufalo")),
-                        DropdownMenuItem(value: "BBQ", child: Text("BBQ")),
+                        DropdownMenuItem(
+                          value: "BBQ", child: Text("BBQ")),
                         DropdownMenuItem(
                             value: "Chesse", child: Text("Chesse")),
                       ],
@@ -90,17 +91,14 @@ class ProductDetailScreenOffers extends ConsumerWidget {
                             value: "Malteada de fresa",
                             child: Text("Malteada de Fresa")),
                         DropdownMenuItem(
-                            value: "Malteada de vainilla",
-                            child: Text("Malteada de Vainilla")),
+                            value: "Malteada de chocolate",
+                            child: Text("Malteada de Chocolate")),
                         DropdownMenuItem(
                             value: "Malteada de horchata",
                             child: Text("Malteada de Horchata")),
                         DropdownMenuItem(
-                            value: "Coca", 
-                            child: Text("Coca-Cola")),
-                        DropdownMenuItem(
-                          value: "Te", 
-                          child: Text("Té negro")),
+                            value: "Coca", child: Text("Coca-Cola")),
+                        DropdownMenuItem(value: "Te", child: Text("Té negro")),
                       ],
                       onChanged: (v) => drinkType.value = v!,
                     );

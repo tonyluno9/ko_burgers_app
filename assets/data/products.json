@@ -1,21 +1,21 @@
 [
   {
     "name": "LVL 1 Burger",
-    "image": "assets/images/burger1.png",
+    "image": "assets/images/lvl1.png",
     "price": 79,
     "description": "Hamburguesa sencilla con queso.",
     "category": "burgers"
   },
   {
     "name": "LVL 2 Burger",
-    "image": "assets/images/burger1.png",
+    "image": "assets/images/lvl2.png",
     "price": 109,
     "description": "Doble carne, doble queso.",
     "category": "burgers"
   },
   {
     "name": "LVL 3 Burguer",
-    "image": "assets/images/burger1.png",
+    "image": "assets/images/lvl2.png",
     "price": 129,
     "description": "Triple carne, triple de sabor",
     "category": "burgers"
@@ -36,49 +36,49 @@
   },
   {
     "name": "Malteada de Fresa",
-    "image": "assets/images/drink.png",
+    "image": "assets/images/fresa.jpeg",
     "price": 45,
     "description": "Deliciosa malteada de fresa.",
     "category": "drinks"
   },
   {
-    "name": "Malteada de Vainilla",
-    "image": "assets/images/drink.png",
+    "name": "Malteada de Chocolate",
+    "image": "assets/images/chocolate.jpeg",
     "price": 45,
     "description": "Deliciosa malteada de vainilla.",
     "category": "drinks"
   },
   {
     "name": "Malteada de Horchata",
-    "image": "assets/images/drink.png",
+    "image": "assets/images/horchata.jpeg",
     "price": 45,
     "description": "Deliciosa malteada sabor horchata de coco.",
     "category": "drinks"
   },
   {
     "name": "Coca-Cola 600ml",
-    "image": "assets/images/drink.png",
+    "image": "assets/images/coca.jpg",
     "price": 20,
     "description": "Refreco gasificado",
     "category": "drinks"
   },
   {
     "name": "Coca-Cola 1L",
-    "image": "assets/images/drink.png",
+    "image": "assets/images/coca.jpg",
     "price": 30,
     "description": "Refreco gasificado",
     "category": "drinks"
   },
   {
     "name": "Té negro",
-    "image": "assets/images/drink.png",
+    "image": "assets/images/te.png",
     "price": 15,
     "description": "Té negro natural de la casa KO",
     "category": "drinks"
   },
   {
     "name": "Cheesecake",
-    "image": "assets/images/dessert.png",
+    "image": "assets/images/chessecake.png",
     "price": 59,
     "description": "Postre para acabar KO.",
     "category": "desserts"

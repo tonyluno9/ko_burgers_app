@@ -28,7 +28,7 @@ class SuccessScreen extends StatelessWidget {
               Text("Orden: $orderId"),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () => context.go('/orders'),
+                onPressed: () => context.push('/orders'),
                 child: const Text("Ver comprobante"),
               ),
               const SizedBox(height: 8),
